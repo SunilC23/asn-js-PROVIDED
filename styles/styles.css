@@ -23,9 +23,10 @@ body {
 }
 
 /* TO DO: all elements with the .flex class applied are to be made into flex-box containers. */
+.flex {
+    display: flex;
+}
 
-
- 
 
 /************* site-wide text styling *************/
 
@@ -41,11 +42,11 @@ body {
         - change the text colour to white, and 
         - change the cursor to pointer.
 */
-/* Heading styling */
+
 h1 {
     font-size: 48px;
     text-align: center;
-    line-height: 150px; /* Center vertically in the available space */
+    line-height: 150px; 
 }
 
 h2 {
@@ -57,40 +58,30 @@ h2 {
     font-size: 24px;
 }
 
-/* Button styling */
 .fake-button {
-    background-color: #FFD700; /* Mustard-yellow color */
+    background-color: #FFD700; 
     text-align: center;
     line-height: 3;
-    border: 1px solid #000; /* Solid black border, 1px wide */
+    border: 1px solid #000;
     display: inline-block;
 }
 
-/* Anchor styling */
 a {
-    color: #000; /* Black color for all anchors */
-    text-decoration: none; /* Remove underline */
+    color: #000; 
+    text-decoration: none; 
 }
 
-/* Hover state for anchors in main and footer */
 main a:hover,
 footer a:hover {
     text-decoration: underline;
 }
-
-/* Hover state for fake-button and blue-hover elements */
 .fake-button:hover,
 .blue-hover:hover {
     text-decoration: underline;
-    background-color: #6495ED; /* Cornflower blue color */
-    color: #fff; /* White text color */
+    background-color: #6495ED; 
+    color: #fff; 
     cursor: pointer;
 }
-
-
-
-
-
 
 
 
@@ -103,9 +94,9 @@ footer a:hover {
     - there will be 25px of space between the header and main, and 50px of space between main and footer.
     - the footer will be 60px tall, have a font-weight of 200, and the text within will be centered vertically and horizontally.
 */
-/* Header styling */
+
 header {
-    background-color: #FFD700; /* Mustard-yellow color */
+    background-color: #FFD700;
     height: 150px;
     padding: 25px;
 }
@@ -113,23 +104,21 @@ header {
 header img {
     width: 100px;
     height: 100px;
-    margin: 25px; /* 25px space on top, left, and bottom */
+    margin: 25px; 
 }
 
 header h1 {
     text-align: center;
-    line-height: 150px; /* Center vertically in the header */
+    line-height: 150px; 
 }
 
-/* Spacing between header and main, and main and footer */
 main {
     margin-top: 25px;
     margin-bottom: 50px;
 }
 
-/* Footer styling */
 footer {
-    background-color: #FFD700; /* Mustard-yellow color */
+    background-color: #FFD700; 
     height: 60px;
     font-weight: 200;
     display: flex;
@@ -137,18 +126,15 @@ footer {
     justify-content: center;
 }
 
-/* Additional styles for footer links (if needed) */
 footer a {
-    color: #000; /* Set your desired link color */
+    color: #000; 
     text-decoration: none;
-    margin: 0 10px; /* Adjust as needed */
+    margin: 0 10px; /
 }
 
 footer a:hover {
     text-decoration: underline;
 }
-
-
 
 
 
@@ -161,7 +147,7 @@ footer a:hover {
     - each fake-button on this page will be 250px wide with 150px of space between them.
     - the pair of fake-buttons will be centered on the page. HINT: can calculate the required margin to make them appear to be centered.
 */
-/* Additional styles for the specified layout */
+
 .flex {
     display: flex;
     justify-content: space-between;
@@ -172,7 +158,7 @@ footer a:hover {
 }
 
 .about-us h2 {
-    line-height: 2em; /* Adjust as needed */
+    line-height: 2em; 
 }
 
 .about-us p {
@@ -186,8 +172,8 @@ img {
 }
 
 .index {
-    max-width: 800px; /* Adjust the maximum width as needed */
-    margin: 0 auto; /* Center the content */
+    max-width: 800px; 
+    margin: 0 auto; /
 }
 
 .fake-button {
@@ -196,17 +182,13 @@ img {
     margin-right: 150px;
 }
 
-/* Adjust the spacing between fake-buttons */
 .fake-button + .fake-button {
     margin-right: 0;
 }
 
-/* Center the pair of fake-buttons */
 .flex:last-child {
     justify-content: center;
 }
-
-
 
 
 
@@ -224,62 +206,53 @@ img {
     - all items within the page will be centered within their available space.
 
 */
-/* Booking page specific styles */
 
-/* Center the content within the available space */
 .booking-page {
     max-width: 600px;
     margin: 0 auto;
 }
 
-/* General text styling */
 .booking-page p,
 .booking-page h2 {
     font-size: 18px;
 }
 
-/* Styling for the day selectors */
 .day-selector {
     margin-bottom: 12px;
 }
 
 .day-selector li {
     width: 60px;
-    border: 1px solid #000; /* Solid black border, 1px wide */
-    margin-right: 20px; /* Space between list items */
-    padding: 5px; /* Space between border and content */
+    border: 1px solid #000;
+    margin-right: 20px; 
+    padding: 5px; 
 }
 
-/* Styling for small buttons */
 .small-button {
-    border: 1px solid #000; /* Solid black border, 1px wide */
-    margin-right: 5px; /* Space between border and content */
-    padding: 5px; /* Space between border and content */
+    border: 1px solid #000; 
+    margin-right: 5px; 
+    padding: 5px; 
 }
 
-/* Styling for top-margin items */
 .top-margin {
     margin-top: 24px;
     margin-bottom: 12px;
 }
 
-/* Styling for the "clear days" button */
 #clear-button {
     width: 200px;
+    margin: 0 auto; /* Center horizontally */
+    margin-top: 12px;
+    display: block; /* Ensure it's treated as a block element */
 }
 
-/* Styling for elements with the .clicked class */
 .clicked {
-    background-color: #FFD700; /* Mustard-yellow color */
+    background-color: #FFD700; 
 }
 
-/* Center all items within the booking page */
 .booking-page * {
     text-align: center;
 }
-
-
-
 
 
 /************* contact page *************/
@@ -290,11 +263,7 @@ img {
     - all form input, textarea, and and button elements will have the same font as the rest of the page, a line-height of 24px, a font-size of 16px, and the same border as other buttons on the site. There will be 24px of space below each of these elements.
     - the edges of the button will line up exactly with the text-area element. HINT: time for some math!
 */
-/* Contact page styling */
 
-
-
-/* Main section styling */
 #contact-page {
     height: 420px;
     display: flex;
@@ -303,44 +272,34 @@ img {
     align-items: center;
 }
 
-/* Columns for form elements */
 .flex {
     display: flex;
     margin-bottom: 24px;
 }
 
-/* Label column styling */
+
 label {
     width: 150px;
     text-align: right;
 }
 
-/* Input column styling */
 input,
 textarea,
 button {
     font-size: 16px;
     line-height: 24px;
-    border: 1px solid #000; /* Solid black border, 1px wide */
+    border: 1px solid #000; 
     margin-bottom: 24px;
 }
 
-/* Textarea specific styling */
 textarea {
     height: 150px;
 }
 
-/* Button positioning */
 button {
-    margin-left: 24px; /* Space between the input column and button */
+    margin-left: 24px; 
 }
 
-/* Center all items within the contact section */
 #contact-page * {
     text-align: center;
 }
-
-
-
-
-
